@@ -2,9 +2,9 @@
 
 
 # X server + drivers
-sudo pacman -S xorg-server xorg-apps xorg-xinit xf86-video-intel --noconfirm --needed
-# If have nvidia device
-#sudo pacman -S xf86-video-nouveau --noconfirm --needed
+sudo pacman -S xorg-server xorg-apps xorg-xinit --noconfirm --needed
+# If need specific video drivers (e.g nvidia or old intel device)
+#sudo pacman -S xf86-video-nouveau xf86-video-intel --noconfirm --needed
 # Display manager with gtk frontend and enable in systemd
 sudo pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings --noconfirm --needed
 sudo systemctl enable lightdm.service
@@ -40,7 +40,7 @@ sudo pacman -S arc-gtk-theme papirus-icon-theme --noconfirm --needed
 # audio
 sudo pacman -S pulseaudio pulseaudio-alsa --noconfirm --needed
 # other, (kio package remove, is it needed?)
-sudo pacman -S gconf --noconfirm --needed
+#sudo pacman -S gconf --noconfirm --needed
 # qemu & virtual-manager
 #sudo pacman -S qemu libvirt ebtables dnsmasq virt-manager --noconfirm --needed
 #sudo systemctl enable libvirtd.service ebtables.service dnsmasq.service
