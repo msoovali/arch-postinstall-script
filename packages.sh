@@ -16,8 +16,8 @@ sudo pacman -S network-manager-applet --noconfirm --needed
 #sudo pacman -S xfce4 xfce4-goodies file-roller evince --noconfirm --needed
 # mate desktop environment
 sudo pacman -S mate mate-extra --noconfirm --needed
-# user directories
-sudo pacman -S xdg-user-dirs-gtk --noconfirm --needed
+# user directories, keyring, nightlight (basically all that is already built into gnome, comment out for gnome)
+sudo pacman -S xdg-user-dirs-gtk gnome-keyring redshift --noconfirm --needed
 # ssh
 sudo pacman -S openssh --noconfirm --needed
 # printing service
