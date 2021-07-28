@@ -20,7 +20,7 @@ sudo pacman -S openssh --noconfirm --needed
 sudo pacman -S cups cups-pdf system-config-printer splix --noconfirm --needed
 sudo systemctl enable org.cups.cupsd.service
 # to run appimage
-sudo pacman -S fuse3 --noconfirm --needed
+sudo pacman -S fuse2 fuse3 --noconfirm --needed
 # thunderbolt devices
 #sudo pacman -S bolt --noconfirm --needed
 # openvpn and networkmanage front end
